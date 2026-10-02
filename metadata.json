@@ -1,0 +1,6 @@
+{
+  "name": "SMR-MHD Nuclear System Architect",
+  "description": "Interactive animated engineering graphic novel and 3D simulation exploring Small Modular Reactors, Magnetohydrodynamics (MHD) coolant flow dynamics, and turbine-less solid-state nuclear power generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

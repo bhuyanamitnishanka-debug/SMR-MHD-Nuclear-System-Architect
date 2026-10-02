@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #050811;
+    color: #e2e8f0;
+    overflow-x: hidden;
+  }
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.font-comic {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+/* Comic Novel Panel Styling */
+.comic-box {
+  background: #090e1a;
+  border: 2px solid #1e293b;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+.comic-box-cyan {
+  background: #071322;
+  border: 2px solid #0284c7;
+  box-shadow: 4px 4px 0px rgba(2, 132, 199, 0.3);
+  position: relative;
+}
+
+.comic-box-amber {
+  background: #191206;
+  border: 2px solid #d97706;
+  box-shadow: 4px 4px 0px rgba(217, 119, 6, 0.3);
+  position: relative;
+}
+
+.comic-box-rose {
+  background: #19090f;
+  border: 2px solid #e11d48;
+  box-shadow: 4px 4px 0px rgba(225, 29, 72, 0.35);
+  position: relative;
+}
+
+.comic-caption {
+  font-family: 'Chakra Petch', sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.comic-sfx {
+  font-family: 'Chakra Petch', sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  text-shadow: 2px 2px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050811;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.9; }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
